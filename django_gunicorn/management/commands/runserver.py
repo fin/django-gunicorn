@@ -25,6 +25,7 @@ class Command(BaseCommand):
 
     help = "Starts a lightweight Web server for development."
     requires_system_checks = False
+    leave_locale_alone = True
 
     def get_handler(self, *args, **options):
         """
